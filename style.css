@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url(./images/topLogo.jpg.png);
+    background-position: center;
+    /*background-size: cover;*/
+    background-repeat: no-repeat;
+}
+.containerNavAndGameTable {
+    height: 80vh;
+    width: 100vw;
+    font-size: 0;
+    background-image: url(./images/imageFontan.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.containerNavAndGameTable > * {
+    font-size: 1rem;
+
+}
+nav {
+    height: 100%;
+    width: 15%;
+    /*background-color: darkblue;*/
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gameTable {
+    height: 100%;
+    width: 85%;
+    /*background-color: blue;*/
+    /*background-image: url(./images/imageFontan.gif);*/
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+.cardContainer {
+    width: 15.6%;
+    height: 33.33%;
+    /*background-color: yellow;*/
+    display: inline-block;
+    float: left;
+}
+.card {
+    width: 75%;
+    height: 85%;
+    position: relative;
+    top: 8%;
+    left: 1%;
+}
+.front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: purple;
+    /*background-image: url(./images/girls.jpg);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.imgSize {
+    height: 100%;
+    width: 100%;
+
+}
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*background-color: brown;*/
+    background-image: url('./images/black.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hide .back {
+    display: none;
+}
