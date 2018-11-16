@@ -2,6 +2,7 @@ $(document).ready(initializeApp);
 
 var firstCardClicked = null;
 var secondCardClicked = null;
+var restrictCardClick = false;
 var frontOfTheCard = [
     './images/chandlerbing1.jpg',
     './images/girls.jpg',
@@ -23,20 +24,18 @@ var frontOfTheCard = [
     './images/rossgaller1.jpg'
 ];
 
-$('.front').css('background-color', 'black');
+
 
 //functions hve to be executed on load or reload.
 function initializeApp(){
     createCardsOnTableGame();
-    //applyBackgroundImageForFrontOfTheCard();
     applyEventHandlersToDom();
-
 }
+
 function makeRandomCardFromArray(){
     frontOfTheCard.sort(function(a, b){return 0.5 - Math.random()});
 }
 function createCardsOnTableGame () {
-
 
     makeRandomCardFromArray();
     for (var cardIndex=0; cardIndex <frontOfTheCard.length; cardIndex++ ) {
@@ -47,7 +46,6 @@ function createCardsOnTableGame () {
            class: 'imgSize',
            src: frontOfTheCard[cardIndex]
        });
-       //applyBackgroundImageForFrontOfTheCard(front,frontOfTheCard[cardIndex] )
        var back = $('<div>').addClass('back');
        front.append(frontImage);
        card.append(front);
@@ -57,17 +55,15 @@ function createCardsOnTableGame () {
     }
 }
 
-function applyBackgroundImageForFrontOfTheCard(cardFront, image){
-
-    cardFront.css('background-image', 'url(' +image+')');
-}
-
 
 function applyEventHandlersToDom() {
     $('.card').click(handleCardClick);
 }
 
 function handleCardClick() {
+    if(restrictCardClick){
+        return;
+    }
     if ($(event.currentTarget).hasClass('hide')) {
         return;
     }
@@ -84,12 +80,14 @@ function handleCardClick() {
             secondCardClicked = null;
 
         } else {
+            restrictCardClick = true;
             setTimeout(delayResetNotMatchedCards, 1000);
         }
     }
 
 }
 function delayResetNotMatchedCards() {
+    restrictCardClick = false;
     $(firstCardClicked).removeClass('hide');
     $(secondCardClicked).removeClass('hide');
     firstCardClicked = null;

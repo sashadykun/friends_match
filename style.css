@@ -5,17 +5,92 @@ body {
 header {
     height: 20vh;
     width: 100vw;
-    background-color: black;
-    background-image: url(./images/topLogo.jpg.png);
-    background-position: center;
-    /*background-size: cover;*/
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to left, rgba(75, 73, 73, 3), rgb(7, 6, 6));
+
 }
+
+.logocontainer{
+    height: 100%;
+    width: 25%;
+    font-size: 0;
+    float: left; 
+    
+    
+}
+.logocontainer img {
+    height: 30%;
+    width: 70%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+}
+
+.gameplayed {
+    height: 100%;
+    width: 16%;
+    position: relative;
+    float: left;
+    
+}
+
+.gamePlayedCount {
+    position: relative;
+    top: 20%;
+    color: rgb(228, 206, 206);
+    
+}
+
+.gameNumber{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgb(228, 206, 206);
+}
+
+.attempts {
+    position: relative;
+    top: 20%;
+    color: rgb(228, 206, 206);
+}
+
+.atemptsNumber{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgb(228, 206, 206);
+}
+
+.accuracy {
+    position: relative;
+    top: 20%;
+    color: rgb(228, 206, 206);
+}
+
+.accuracyNumber {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgb(228, 206, 206);
+}
+
+.reset {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color: whitesmoke;
+    border: none;
+    padding: 15px 32px;
+    background-image: linear-gradient(to left, rgba(15, 13, 13, 0), rgb(27, 22, 22));
+}
+
+
+
 .containerNavAndGameTable {
     height: 80vh;
     width: 100vw;
     font-size: 0;
-    background-image: url(./images/imageFontan.gif);
+    /* background-image: url(./images/imageFontan.gif); */
+    background-image: url(./images/friendss.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,7 +102,6 @@ header {
 nav {
     height: 100%;
     width: 15%;
-    /*background-color: darkblue;*/
     display: inline-block;
     vertical-align: top;
 }
@@ -35,8 +109,6 @@ nav {
 .gameTable {
     height: 100%;
     width: 85%;
-    /*background-color: blue;*/
-    /*background-image: url(./images/imageFontan.gif);*/
     display: inline-block;
     background-position: center;
     background-size: cover;
@@ -44,7 +116,6 @@ nav {
 .cardContainer {
     width: 15.6%;
     height: 33.33%;
-    /*background-color: yellow;*/
     display: inline-block;
     float: left;
 }
@@ -62,7 +133,6 @@ nav {
     left: 0;
     top: 0;
     background-color: purple;
-    /*background-image: url(./images/girls.jpg);*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -79,7 +149,6 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-    /*background-color: brown;*/
     background-image: url('./images/black.jpg');
     background-position: center;
     background-size: cover;
