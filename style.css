@@ -5,7 +5,7 @@ body {
 header {
     height: 20vh;
     width: 100vw;
-    background-image: linear-gradient(to left, rgba(75, 73, 73, 3), rgb(7, 6, 6));
+    background-image: linear-gradient(to left, rgba(14, 110, 235, 0), rgb(13, 109, 219));
 
 }
 
@@ -90,8 +90,8 @@ header {
     width: 100vw;
     font-size: 0;
     /* background-image: url(./images/imageFontan.gif); */
-    background-image: url(./images/friendss.jpg);
-    background-size: cover;
+    background-image: url(./images/friends-netflix.jpg);
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
