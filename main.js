@@ -33,10 +33,21 @@ var frontOfTheCard = [
 
 //functions hve to be executed on load or reload.
 function initializeApp(){
+    
     createCardsOnTableGame();
     applyEventHandlersToDom();
     resetGame();
+    displaytIntroModal();
     
+    
+}
+
+function displaytIntroModal(){
+    $('#intro_modal').modal('show');
+}
+
+function displaytWinModal(){
+    $('#win_modal').modal('show');
 }
 
 function makeRandomCardFromArray(){
@@ -65,6 +76,7 @@ function createCardsOnTableGame () {
 
 function resetGame(){
     $('.reset').click(handleResetGame);
+    
     
 }
 function handleResetGame(){
@@ -107,11 +119,11 @@ function applyEventHandlersToDom() {
 }
 
 
-function handleCardClick() {
+function handleCardClick(event) {
     if(restrictCardClick){
         return;
     }
-    if ($(event.currentTarget).hasClass('hide')) {
+    if ($(event.currentTarget).hasClass('hide1')) {
         return;
     }
 
@@ -145,6 +157,7 @@ function handleCardClick() {
         gamesPlayed = $('.gameNumber').text(countGames);
         $('.gameTable').empty();
         setTimeout(handleResetGame, 2000);
+        displaytWinModal();
         
     }
     
@@ -152,13 +165,13 @@ function handleCardClick() {
 }
 function delayResetNotMatchedCards() {
     restrictCardClick = false;
-    $(firstCardClicked).removeClass('hide');
-    $(secondCardClicked).removeClass('hide');
+    $(firstCardClicked).removeClass('hide1');
+    $(secondCardClicked).removeClass('hide1');
     firstCardClicked = null;
     secondCardClicked = null;
 }
 
 function hideCard(card) {
 
-    $(card).addClass('hide');
+    $(card).addClass('hide1');
 }

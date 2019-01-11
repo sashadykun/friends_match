@@ -1,13 +1,19 @@
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 header {
-    height: 20vh;
-    width: 100vw;
+    height: 20%;
+    width: 100%;
     background-image: linear-gradient(to left, rgba(14, 110, 235, 0), rgb(13, 109, 219));
 
 }
+
+/* .modal-body {
+    font-size: 2vmin;
+} */
 
 .logocontainer{
     height: 100%;
@@ -36,7 +42,7 @@ header {
 .gamePlayedCount {
     position: relative;
     top: 20%;
-    color: rgb(228, 206, 206);
+    color: rgb(17, 16, 16, 0.884);
     
 }
 
@@ -44,33 +50,33 @@ header {
     position: relative;
     top: 30%;
     left: 5%;
-    color:  rgb(228, 206, 206);
+    color:  rgb(17, 16, 16, 0.884);
 }
 
 .attempts {
     position: relative;
     top: 20%;
-    color: rgb(228, 206, 206);
+    color: rgb(17, 16, 16, 0.884);
 }
 
 .atemptsNumber{
     position: relative;
     top: 30%;
     left: 5%;
-    color:  rgb(228, 206, 206);
+    color:  rgba(17, 16, 16, 0.884);
 }
 
 .accuracy {
     position: relative;
     top: 20%;
-    color: rgb(228, 206, 206);
+    color: rgb(17, 16, 16, 0.884);
 }
 
 .accuracyNumber {
     position: relative;
     top: 30%;
     left: 5%;
-    color:  rgb(228, 206, 206);
+    color:  rgb(17, 16, 16, 0.884);
 }
 
 .reset {
@@ -79,15 +85,15 @@ header {
     left: 5%;
     color: whitesmoke;
     border: none;
-    padding: 15px 32px;
+    /* padding: 15px 32px; */
     background-image: linear-gradient(to left, rgba(15, 13, 13, 0), rgb(27, 22, 22));
 }
 
 
 
 .containerNavAndGameTable {
-    height: 80vh;
-    width: 100vw;
+    height: 80%;
+    width: 100%;
     font-size: 0;
     /* background-image: url(./images/imageFontan.gif); */
     background-image: url(./images/friends-netflix.jpg);
@@ -154,6 +160,51 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.hide .back {
+.hide1 .back {
     display: none;
+}
+
+@media screen and (orientation: portrait){
+    
+    
+    .cardContainer {
+        width: 33.33%;
+        height: 16.5%;
+        
+    }
+
+    header {
+        height: 10%;
+        width: 100%;
+       
+    }
+
+    
+    .gameplayed {
+        font-size: 0.9rem;
+        
+    }
+    
+    
+    .attempts {
+        font-size: 0.9rem;
+    }
+    
+    
+    .accuracy {
+        font-size: 0.9rem;
+    }
+    
+    .containerNavAndGameTable { 
+        height: 90%;
+        width: 100%;
+        
+    }
+
+    .card {
+        width: 65%;
+        height: 94%;
+        
+    } 
+
 }

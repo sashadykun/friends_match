@@ -4,12 +4,67 @@
 
     <title >Mamory Match Game</title>
     <link rel="icon" href="./images/smol_logo.jpeg">
-    <link rel="stylesheet" href="style.css">
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 
 </head>
 <body>
+    <div id="intro_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title text-center ">Hi, welcome to <br/>"Friend Match"!</h3>  
+            </div>
+            <div class="modal-body">
+                <p class=" text-center ">This is a simple memory match game, to win simply find cards that match!<br/>
+                    To start click on "X" or "Play" button.
+                </p>
+                <h4 class="text-center">Good Luck...</h4>
+            </div>
+            <div class="modal-footer text-center ">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+            </div>      
+            </div>
+
+        </div>
+                
+                
+    </div>
+    <div id="win_modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content -->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title text-center ">You Win!<br/>Congratulations...</h3>
+                    
+                </div>
+                <div class="modal-body">
+                    <p class=" text-center ">
+                        To play again click on "X" or "Play" button.
+                    </p>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Play</button>
+                </div>
+                      
+                </div>
+    
+            </div>
+                    
+                    
+        </div>
     <header class="top">
         <div class="logocontainer">
             <img src="./images/topLogo.jpg.png">
@@ -27,7 +82,7 @@
             <div class="accuracyNumber">0</div>
         </div>
         <div class="gameplayed">
-                <button type="button" class="reset">NEW GAME</button>
+                <button type="button" class="reset btn btn-outline-success btn-sm">NEW GAME</button>
             </div>
     </header>
     <div class="containerNavAndGameTable">
@@ -36,6 +91,7 @@
 
         </main>
     </div>
+    
 
 
 </body>
