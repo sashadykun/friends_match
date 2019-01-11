@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 20%;
+    width: 100%;
+    background-image: linear-gradient(to left, rgba(14, 110, 235, 0), rgb(13, 109, 219));
+
+}
+
+/* .modal-body {
+    font-size: 2vmin;
+} */
+
+.logocontainer{
+    height: 100%;
+    width: 25%;
+    font-size: 0;
+    float: left; 
+    
+    
+}
+.logocontainer img {
+    height: 30%;
+    width: 70%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+}
+
+.gameplayed {
+    height: 100%;
+    width: 16%;
+    position: relative;
+    float: left;
+    
+}
+
+.gamePlayedCount {
+    position: relative;
+    top: 20%;
+    color: rgb(17, 16, 16, 0.884);
+    
+}
+
+.gameNumber{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgb(17, 16, 16, 0.884);
+}
+
+.attempts {
+    position: relative;
+    top: 20%;
+    color: rgb(17, 16, 16, 0.884);
+}
+
+.atemptsNumber{
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgba(17, 16, 16, 0.884);
+}
+
+.accuracy {
+    position: relative;
+    top: 20%;
+    color: rgb(17, 16, 16, 0.884);
+}
+
+.accuracyNumber {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color:  rgb(17, 16, 16, 0.884);
+}
+
+.reset {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    color: whitesmoke;
+    border: none;
+    /* padding: 15px 32px; */
+    background-image: linear-gradient(to left, rgba(15, 13, 13, 0), rgb(27, 22, 22));
+}
+
+
+
+.containerNavAndGameTable {
+    height: 80%;
+    width: 100%;
+    font-size: 0;
+    /* background-image: url(./images/imageFontan.gif); */
+    background-image: url(./images/friends-netflix.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.containerNavAndGameTable > * {
+    font-size: 1rem;
+
+}
+nav {
+    height: 100%;
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gameTable {
+    height: 100%;
+    width: 85%;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+.cardContainer {
+    width: 15.6%;
+    height: 33.33%;
+    display: inline-block;
+    float: left;
+}
+.card {
+    width: 75%;
+    height: 85%;
+    position: relative;
+    top: 8%;
+    left: 1%;
+}
+.front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: purple;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.imgSize {
+    height: 100%;
+    width: 100%;
+
+}
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('./images/black.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hide1 .back {
+    display: none;
+}
+
+@media screen and (orientation: portrait){
+    
+    
+    .cardContainer {
+        width: 33.33%;
+        height: 16.5%;
+        
+    }
+
+    header {
+        height: 10%;
+        width: 100%;
+       
+    }
+
+    
+    .gameplayed {
+        font-size: 0.9rem;
+        
+    }
+    
+    
+    .attempts {
+        font-size: 0.9rem;
+    }
+    
+    
+    .accuracy {
+        font-size: 0.9rem;
+    }
+    
+    .containerNavAndGameTable { 
+        height: 90%;
+        width: 100%;
+        
+    }
+
+    .card {
+        width: 65%;
+        height: 94%;
+        
+    } 
+
+}
