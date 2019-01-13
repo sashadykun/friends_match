@@ -197,6 +197,13 @@ nav {
        
     }
 
+    .modal-title {
+        font-size: 0,9rem;
+    }
+    .modal-body > p {
+        color: black;
+        font-size: 1.5rem;
+    }
     
     .gameplayed {
         font-size: 0.9rem;
