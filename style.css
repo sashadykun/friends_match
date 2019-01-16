@@ -114,7 +114,7 @@ body {
     width: 100%;
     font-size: 0;
     /* background-image: url(./images/imageFontan.gif); */
-    background-image: url(./images/friends-netflix.jpg);
+    background-image: url(./images/friends-net.jpg);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -191,6 +191,17 @@ nav {
         
     }
 
+    .containerNavAndGameTable {
+        /* height: 80%;
+        width: 100%;
+        font-size: 0; */
+        background-image: url(./images/background.jpg);
+        /* background-image: url(./images/friends-netflix.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat; */
+    }
+
     header {
         height: 10%;
         width: 100%;
@@ -210,6 +221,7 @@ nav {
         
     }
     
+
     
     .attempts {
         font-size: 0.9rem;
