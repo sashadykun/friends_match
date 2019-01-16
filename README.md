@@ -1,4 +1,4 @@
-###Application name - Twitch Buddy 
+###Application name - Friends Match 
 
 ## DEMO URL 
 - http://sashadykun.com/memory_match/
