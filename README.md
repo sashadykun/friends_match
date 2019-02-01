@@ -1,7 +1,7 @@
 ###Application name - Friends Match 
 
 ## DEMO URL 
-- http://sashadykun.com/memory_match/
+- https://sashadykun.com/friends_match/
 
 
 ##Overview
@@ -14,4 +14,5 @@ Memory match is a game with 18 cards face down and the player has to try and mat
 - jQuery
 - HTML5
 - CSS3
+- Bootstrap
 
